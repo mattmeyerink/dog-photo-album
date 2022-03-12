@@ -7,6 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MoreDogPhotosComponent } from './more-dog-photos/more-dog-photos.component';
 import { UtilityDemoComponent } from './utility-demo/utility-demo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UtilityDemoComponent } from './utility-demo/utility-demo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

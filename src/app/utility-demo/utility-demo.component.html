@@ -9,8 +9,11 @@
     </div>
 
     <div class="utilitySection">
-        <h5>{{ timeoutMessage }}</h5>
-        <button (click)="demoDelay()" class="btn btn-primary btn-lg">Demo Delay</button>
+        <h5>{{ timeoutMessage ? timeoutMessage : "Waiting..." }}</h5>
+        <div class="textInputContainer">
+            <input type="number" [(ngModel)]="timeoutLength" placeholder="Enter a Delay (ms)" class="textInput"/>
+            <button (click)="demoDelay()" class="btn btn-primary btn-lg">Demo Delay</button>
+        </div>
     </div>
 
     <button id="btnToMove" (click)="demoAnimateRight()" class="btn btn-primary btn-lg utilitySection animatedBtn">Demo Animate Right</button>

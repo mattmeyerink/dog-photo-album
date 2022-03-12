@@ -6,21 +6,18 @@ import { animateRight, delay, removeDuplicates } from 'src/utils';
   templateUrl: './utility-demo.component.html',
   styleUrls: ['./utility-demo.component.scss']
 })
-export class UtilityDemoComponent implements OnInit {
+export class UtilityDemoComponent {
   sampleArray: any[] = ['1', 2, '1', 'Hello', 'World', '1', 2, 'World'];
   timeoutMessage: string = '';
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  timeoutLength: number = 0;
 
   demoRemoveDuplicates() {
     this.sampleArray = removeDuplicates(this.sampleArray);
   }
 
   async demoDelay() {
-    await delay(2000);
+    this.timeoutMessage = '';
+    await delay(this.timeoutLength);
     this.timeoutMessage = 'Here I am!';
   }
 
