@@ -11,16 +11,25 @@ export class UtilityDemoComponent {
   timeoutMessage: string = '';
   timeoutLength: number = 0;
 
+  /**
+   * Use UtilityFunctions.removeDuplicates to remove duplicates from the sample array
+   */
   demoRemoveDuplicates() {
     this.sampleArray = UtilityFunctions.removeDuplicates(this.sampleArray);
   }
 
+  /**
+   * Use UtilityFunctions.delay to dislay a final message after the input timeout length
+   */
   async demoDelay() {
     this.timeoutMessage = '';
     await UtilityFunctions.delay(this.timeoutLength);
     this.timeoutMessage = 'Here I am!';
   }
 
+  /**
+   * Use the UtilityFunctions.demoAnimateRight to animate the move btn
+   */
   demoAnimateRight() {
     const element = document.getElementById('btnToMove');
 
