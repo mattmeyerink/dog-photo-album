@@ -1,3 +1,22 @@
 .returnHomeBtn {
     margin: 20px;
+    text-align: center;
+}
+
+.utilityContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.word {
+    margin: 5px;
+}
+
+.utilitySection {
+    margin: 20px;
+    text-align: center;
+}
+
+.animatedBtn {
+    position: relative;
 }
