@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { animateRight, delay, removeDuplicates } from 'src/utils';
+import { Component } from '@angular/core';
+import UtilityFunctions from 'src/utils';
 
 @Component({
   selector: 'app-utility-demo',
@@ -12,12 +12,12 @@ export class UtilityDemoComponent {
   timeoutLength: number = 0;
 
   demoRemoveDuplicates() {
-    this.sampleArray = removeDuplicates(this.sampleArray);
+    this.sampleArray = UtilityFunctions.removeDuplicates(this.sampleArray);
   }
 
   async demoDelay() {
     this.timeoutMessage = '';
-    await delay(this.timeoutLength);
+    await UtilityFunctions.delay(this.timeoutLength);
     this.timeoutMessage = 'Here I am!';
   }
 
@@ -25,7 +25,7 @@ export class UtilityDemoComponent {
     const element = document.getElementById('btnToMove');
 
     if (element) {
-      animateRight(element);
+      UtilityFunctions.animateRight(element);
     }
   }
 }
