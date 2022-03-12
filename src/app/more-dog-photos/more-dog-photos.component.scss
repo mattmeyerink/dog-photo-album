@@ -1,3 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .returnHomeBtn {
     margin: 20px;
+}
+
+.dogPhoto {
+    width: 400px
+}
+
+.photoContainer {
+    margin: 10px;
 }

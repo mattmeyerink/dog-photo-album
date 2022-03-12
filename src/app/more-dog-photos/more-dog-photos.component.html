@@ -1,8 +1,10 @@
-<div class="returnHomeBtn">
-    <a href="/home" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Return Home</a>
-</div>
+<div class="container">
+    <div class="returnHomeBtn">
+        <a href="/home" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Return Home</a>
+    </div>
 
-<div *ngFor="let dog of dogPhotos">
-    <img src="{{dog.image}}" />
-    <p>{{ dog.breed }}</p>
+    <div *ngFor="let dog of dogPhotos" class="container photoContainer">
+        <img src="{{dog.image}}" class="dogPhoto" />
+        <h4>{{ dog.breed }}</h4>
+    </div>
 </div>
