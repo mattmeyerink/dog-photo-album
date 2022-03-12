@@ -3,7 +3,7 @@
  * @param ms number
  * @returns Promise
  */
-function delay(ms: number) {
+export function delay(ms: number) {
     return new Promise((res) => setTimeout(() => res(true), ms));
 }
 
@@ -11,7 +11,7 @@ function delay(ms: number) {
  * Move the passed element right 100px over 1 second
  * @param el HTMLElement
  */
-function animateRight(el: HTMLElement) {
+export function animateRight(el: HTMLElement) {
     let elementOffset = 0;
     const animationInterval = setInterval(() => {
         elementOffset += 1;
@@ -28,6 +28,6 @@ function animateRight(el: HTMLElement) {
  * @param xs any[]
  * @returns any[]
  */
-function removeDuplicates(xs: any[]) {
+export function removeDuplicates(xs: any[]) {
     return Array.from(new Set(xs))
 }

@@ -1,0 +1,11 @@
+<div class="returnHomeBtn">
+    <a href="/home" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Return Home</a>
+</div>
+
+<p *ngFor="let item of sampleArray">{{ item }}</p>
+<button (click)="demoRemoveDuplicates()" class="btn btn-primary btn-lg">Demo Remove Duplicates</button>
+
+<h5>{{ timeoutMessage }}</h5>
+<button (click)="demoDelay()" class="btn btn-primary btn-lg">Demo Delay</button>
+
+<button id="btnToMove" (click)="demoAnimateRight()" class="btn btn-primary btn-lg">Demo Animate Right</button>
