@@ -18,10 +18,6 @@ describe('HomePageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
   it('should successfully fetch the random dog image', waitForAsync(async () => {
     spyOn(window, 'fetch').and.returnValue(Promise.resolve({ json: async () => ({ message: 'testURL', status: 'success' }) } as unknown as Response));
     component.dogImage = '';
