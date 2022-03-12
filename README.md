@@ -1,6 +1,6 @@
 # DogPhotoAlbum
 
-This project uses the [dog.ceo](https://dog.ceo/dog-api/documentation/) to display random images of dogs. The project can be seen [here](https://main.d24q1ppzchgm3b.amplifyapp.com/home).
+This project uses the [dog.ceo](https://dog.ceo/dog-api/documentation/) api to display random images of dogs. The project can be seen [here](https://main.d24q1ppzchgm3b.amplifyapp.com/home).
 
 ## Utility Functions
 
